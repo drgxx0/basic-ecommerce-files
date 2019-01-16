@@ -1,0 +1,31 @@
+.navsec {
+    display: grid;
+    grid-area: cart;
+    margin-right: 5px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "back cart2"
+}
+.cartbutton {
+    grid-area: cart2;
+    justify-self: flex-end;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+.cartbutton .fas {
+    justify-content: flex-end;
+}
+.cartbutton p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

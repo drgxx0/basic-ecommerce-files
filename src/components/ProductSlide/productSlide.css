@@ -1,0 +1,21 @@
+.products {
+    grid-area: slide;
+    display: grid;  
+    width: 100%;
+    border: 2px solid gray;
+}
+
+.carousel .slide img {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .products {
+        grid-area: slide;
+        display: grid;  
+        width: 100%;
+        height: 200px;
+        border: 2px solid gray;
+    }
+}

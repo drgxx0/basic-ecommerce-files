@@ -1,0 +1,115 @@
+.itemList {
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px 0.5px gray;
+    grid-template: 
+        [row1-start]"title title delete"[row1-end]
+        [row2-start]"img pricebutton pricebutton"[row2-end]
+        / 2fr 2fr;
+}
+
+.itemList .titleItem {
+    grid-area: title;
+}
+
+.itemList .titleItem a {
+    text-decoration: none;
+    color: black
+}
+
+.itemList .deleteItem {
+    grid-area: delete;
+    cursor: pointer;
+}
+
+.itemList .pricebutton {
+    grid-area: pricebutton;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pricebutton .buyButton {
+    width: 140px;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 1px 10px 0.5px gray;
+    background-color: #F89638;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.pricebutton .buyButton:active {
+    background-color: #C05E00;
+}
+
+.itemList .imgItem {
+    grid-area: img;
+    padding: 10px;
+}
+
+.itemList .imgItem img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .itemList {
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 1px 1px 2px 0.5px gray;
+        grid-template: 
+            [row1-start]"title title delete"[row1-end]
+            [row2-start]"img pricebutton pricebutton"[row2-end]
+            / 2fr 2fr;
+    }
+
+    .itemList .titleItem {
+        grid-area: title;
+    }
+
+    .itemList .deleteItem {
+        grid-area: delete;
+    }
+
+    .itemList .pricebutton {
+        grid-area: pricebutton;
+        padding: 10px;
+    }
+
+    .pricebutton .buyButton {
+        width: 140px;
+        height: auto;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 1px 10px 0.5px gray;
+        background-color: #F89638;
+        text-align: center;
+        color: white;
+    }
+
+    .pricebutton .buyButton:active {
+        background-color: #C05E00;
+    }
+
+    .itemList .imgItem {
+        grid-area: img;
+        padding: 10px;
+    }
+
+    .itemList .imgItem img {
+        width: 100%;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,13 @@
+.content {
+    display: grid;
+    height: 100%;
+    justify-content: center;
+}
+
+.content h3 {
+    align-self: flex-start;
+}
+
+.content i {
+    align-self: flex-end;
+}

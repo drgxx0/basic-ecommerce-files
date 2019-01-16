@@ -1,0 +1,94 @@
+.form-signin {
+  display: grid;
+  width: 100%;
+  padding: 10px;  
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1); 
+  justify-content: center; 
+}
+
+.form-signin h1 {
+    justify-self: center;
+}
+
+.form-signin .form {
+    display: grid;
+    justify-content: center;
+}
+
+.form-signin input {
+    display: inline-block;
+    box-sizing: content-box;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    color: rgba(0,0,0,1);
+    text-overflow: clip;
+    background: rgba(252,252,252,1);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.form-signin .loginButton {
+    width: 140px;
+    justify-self: center;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 0px 1px 10px 0.5px gray;
+    background-color: #F89638;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.form-signin .loginButton:active {
+    background-color: #C05E00;
+}
+
+@media (max-width: 767px) {
+    .form-signin {
+      display: grid;
+      padding: 10px;  
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,0.1);  
+    }
+
+    .form-signin h1 {
+        justify-self: center;
+    }
+
+    .form-signin input {
+        display: inline-block;
+        box-sizing: content-box;
+        padding: 10px 20px;
+        border: 1px solid #b7b7b7;
+        border-radius: 3px;
+        color: rgba(0,0,0,1);
+        text-overflow: clip;
+        background: rgba(252,252,252,1);
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    .form-signin .loginButton {
+        width: 140px;
+        justify-self: center;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 40px;
+        padding: 10px;
+        box-shadow: 0px 1px 10px 0.5px gray;
+        background-color: #F89638;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+}
